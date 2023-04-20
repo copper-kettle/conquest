@@ -24,11 +24,11 @@ nth.innerHTML = '01';
 function turnNext() {
     position -= wth;
     if (Math.abs(position) !== wth * slides.length) {
-        wrapper.style.left = position + "px"; 
+        wrapper.style.left = `${position}px`; 
     }
     if (Math.abs(position) == wth * slides.length) {
         position = 0;
-        wrapper.style.left = position + "px";
+        wrapper.style.left = `${position}px`;
     }
     pagNum();
 }
