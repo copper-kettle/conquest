@@ -35,7 +35,7 @@ function turnNext() {
 function turnPrev() { 
     if (position < 0) {
         position += wth;
-        wrapper.style.left = position + "px";
+        wrapper.style.left = `${position}px`;
     }
     if (position >= 0) {
         wrapper.style.left = 0 + "px";
